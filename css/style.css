@@ -1,0 +1,117 @@
+/*--------
+Reset
+--------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--------
+Common
+--------*/
+
+body{
+    display:flex;
+    flex-direction: column;
+    height:53.125rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*----------
+Header
+----------*/
+
+header{
+    height:6.25rem;
+    padding:1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-sx{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    height: 3.125rem;
+}
+
+h1{
+    margin-left: 10px;
+}
+
+.score{
+    display:flex;
+    margin-right: 60px;
+    margin-top: 60px;
+    font-size: 20px;
+}
+.btn-play{
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+#mode{
+    padding: 5px 20px;
+}
+
+/*-----------
+Main
+------------*/
+
+main{
+    background-color: #7fffd4;
+    flex-grow: 1;
+    display: flex;
+}
+
+.board{
+    display: flex;
+    flex-wrap:wrap;
+    align-content: flex-start;
+    height: 31.25rem;
+    width: 31.25rem;
+    margin: auto;
+}
+
+.easy_board{
+    width: calc(100% / 10) ;
+}
+
+.medium_board{
+    width: calc(100% / 9);
+}
+
+.hard_board{
+    width: calc(100% / 7);
+}
+
+.board .square{
+    
+    aspect-ratio: 1/1;
+    border: 1px solid black;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active{
+    background-color: #25dbef;
+}
+
+.game-over{
+    background-color: #dc2626;
+}
+
+/*-------
+Footer
+-------*/
+
+footer{
+    height:4.375rem;
+    padding:1.25rem;
+}
